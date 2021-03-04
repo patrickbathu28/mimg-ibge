@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.*
 @RequestMapping("cidades")
 class CidadeController (val repository : CidadeRepository) {
 
+    @GetMapping("/v1/application/up")
+    fun applicationUp() : ResponseEntity<String> = ResponseEntity.ok("UP")
+
     @PostMapping
     fun create(@RequestBody cidade : CidadeEntity) = ResponseEntity.ok(repository.save(cidade))
 
