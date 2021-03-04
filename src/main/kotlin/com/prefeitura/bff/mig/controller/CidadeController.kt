@@ -6,10 +6,10 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping("cidades")
+@RequestMapping("/v1/cidades")
 class CidadeController (val repository : CidadeRepository) {
 
-    @GetMapping("/v1/application/up")
+    @GetMapping("/application/up")
     fun applicationUp() : ResponseEntity<String> = ResponseEntity.ok("UP")
 
     @PostMapping
