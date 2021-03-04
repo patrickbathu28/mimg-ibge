@@ -8,3 +8,5 @@ spring:
       database: mimg-ibge
     res:
       defaultMediaType: application/json
+  server:
+    port: 5000
