@@ -1,12 +1,12 @@
-package com.prefeitura.bff.mig
+package com.prefeitura.mig.sasci.mimg.ibge
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
-@SpringBootTest
-class MimgIbgeApplicationTests {
+//@SpringBootTest
+class Application {
 
-	@Test
+//	@Test
 	fun contextLoads() {
 	}
 

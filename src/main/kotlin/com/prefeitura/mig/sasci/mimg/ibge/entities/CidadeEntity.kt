@@ -1,4 +1,4 @@
-package com.prefeitura.bff.mig.entities
+package com.prefeitura.mig.sasci.mimg.ibge.entities
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document

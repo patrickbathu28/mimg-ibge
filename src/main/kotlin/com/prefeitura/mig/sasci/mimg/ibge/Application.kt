@@ -1,15 +1,17 @@
-package com.prefeitura.bff.mig
+package com.prefeitura.mig.sasci.mimg.ibge
 
-import lombok.extern.slf4j.Slf4j
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import kotlin.math.log
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient
+import org.springframework.cloud.openfeign.EnableFeignClients
 
+
+@EnableFeignClients
+@EnableEurekaClient
 @SpringBootApplication
 class Application
 
 fun main(args: Array<String>) {
-	print("Sistema UP")
 	runApplication<Application>(*args)
 	print("Sistema UP - OK")
 }

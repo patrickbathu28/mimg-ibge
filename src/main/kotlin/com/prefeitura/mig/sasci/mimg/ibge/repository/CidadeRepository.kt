@@ -1,6 +1,6 @@
-package com.prefeitura.bff.mig.repository
+package com.prefeitura.mig.sasci.mimg.ibge.repository
 
-import com.prefeitura.bff.mig.entities.CidadeEntity
+import com.prefeitura.mig.sasci.mimg.ibge.entities.CidadeEntity
 import org.springframework.data.mongodb.repository.MongoRepository
 import org.springframework.stereotype.Repository
 

@@ -1,7 +1,7 @@
-package com.prefeitura.bff.mig.controller
+package com.prefeitura.mig.sasci.mimg.ibge.controller
 
-import com.prefeitura.bff.mig.entities.CidadeEntity
-import com.prefeitura.bff.mig.repository.CidadeRepository
+import com.prefeitura.mig.sasci.mimg.ibge.entities.CidadeEntity
+import com.prefeitura.mig.sasci.mimg.ibge.repository.CidadeRepository
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 

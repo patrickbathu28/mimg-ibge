@@ -8,5 +8,10 @@ spring:
       database: mimg-ibge
     res:
       defaultMediaType: application/json
-  server:
-    port: 5000
+
+server:
+  port: 8081
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
