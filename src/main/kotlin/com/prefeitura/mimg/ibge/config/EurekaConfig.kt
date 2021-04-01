@@ -1,4 +1,4 @@
-package com.prefeitura.mig.sasci.mimg.ibge.config
+package com.prefeitura.mimg.ibge.config
 
 import com.netflix.discovery.EurekaClient
 import org.springframework.beans.factory.annotation.Autowired

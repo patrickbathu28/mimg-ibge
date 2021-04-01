@@ -8,7 +8,7 @@
 		<version>2.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.prefeitura</groupId>
+	<groupId>com.prefeitura.mimg.ibje</groupId>
 	<artifactId>mimg-ibge</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mimg-ibge</name>
@@ -123,6 +123,28 @@
 			<artifactId>json</artifactId>
 			<version>${json.version}</version>
 		</dependency>
+
+		<!-- Swagger  -->
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+
+		<!-- Rabbit  -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>

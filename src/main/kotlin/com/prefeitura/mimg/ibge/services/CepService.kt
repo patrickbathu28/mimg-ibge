@@ -1,8 +1,8 @@
-package com.prefeitura.mig.sasci.mimg.ibge.services
+package com.prefeitura.mimg.ibge.services
 
-import com.prefeitura.mig.sasci.mimg.ibge.client.ViaCepClient
-import com.prefeitura.mig.sasci.mimg.ibge.entities.CepEntity
-import com.prefeitura.mig.sasci.mimg.ibge.repository.CepRepository
+import com.prefeitura.mimg.ibge.client.ViaCepClient
+import com.prefeitura.mimg.ibge.entities.CepEntity
+import com.prefeitura.mimg.ibge.repository.CepRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 import java.util.*

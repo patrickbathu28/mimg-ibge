@@ -1,4 +1,4 @@
-package com.prefeitura.mig.sasci.mimg.ibge.services
+package com.prefeitura.mimg.ibge.services
 
 import com.fasterxml.jackson.core.JsonProcessingException
 import org.springframework.stereotype.Service

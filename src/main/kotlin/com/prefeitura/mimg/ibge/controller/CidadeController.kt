@@ -1,16 +1,13 @@
-package com.prefeitura.mig.sasci.mimg.ibge.controller
+package com.prefeitura.mimg.ibge.controller
 
-import com.prefeitura.mig.sasci.mimg.ibge.entities.CidadeEntity
-import com.prefeitura.mig.sasci.mimg.ibge.repository.CidadeRepository
+import com.prefeitura.mimg.ibge.entities.CidadeEntity
+import com.prefeitura.mimg.ibge.repository.CidadeRepository
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/v1/cidades")
 class CidadeController (val repository : CidadeRepository) {
-
-    @GetMapping("/application/up")
-    fun applicationUp() : ResponseEntity<String> = ResponseEntity.ok("UP")
 
     @PostMapping
     fun create(@RequestBody cidade : CidadeEntity) = ResponseEntity.ok(repository.save(cidade))

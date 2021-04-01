@@ -1,14 +1,14 @@
-package com.prefeitura.mig.sasci.mimg.ibge.controller
+package com.prefeitura.mimg.ibge.controller
 
-import com.prefeitura.mig.sasci.mimg.ibge.client.ViaCepClient
-import com.prefeitura.mig.sasci.mimg.ibge.entities.CepEntity
-import com.prefeitura.mig.sasci.mimg.ibge.repository.CepRepository
-import com.prefeitura.mig.sasci.mimg.ibge.services.CepService
+import com.prefeitura.mimg.ibge.entities.CepEntity
+import com.prefeitura.mimg.ibge.services.CepService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
-
-import org.springframework.web.bind.annotation.*
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/v1/cep")
