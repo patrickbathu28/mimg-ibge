@@ -1,5 +1,6 @@
 package com.prefeitura.mimg.ibge.entities
 
+import lombok.Builder
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 

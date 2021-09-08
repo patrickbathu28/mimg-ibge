@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable
 @FeignClient(name = "mig-msc", url = "https://viacep.com.br")
 interface ViaCepClient {
 
-    @GetMapping(path = arrayOf("/ws/{cep}/json/"))
+    @GetMapping(path = ["/ws/{cep}/json/"])
     fun getCep(@PathVariable("cep") cep: String): CepEntity?
 
 }

@@ -6,6 +6,5 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface CepRepository : MongoRepository<CepEntity, String>{
-    abstract fun save(cepVia: CepEntity?)
-
+    fun save(cepVia: CepEntity?)
 }

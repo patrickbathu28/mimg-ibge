@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/v1/cep")
-@CrossOrigin(origins = arrayOf("http://localhost:4200"))
+@CrossOrigin(origins = ["http://localhost:4200"])
 class ConsultaCepController {
 
     @Autowired
     private val cepService : CepService? = null
 
-    @GetMapping(path = arrayOf("/{cep}"))
+    @GetMapping(path = ["/{cep}"])
     fun getCep(@PathVariable("cep") cep: String): ResponseEntity<CepEntity> = ResponseEntity.status(HttpStatus.OK).body(cepService?.getCep(cep))
 
 }

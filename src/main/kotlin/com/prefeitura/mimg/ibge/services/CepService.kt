@@ -1,30 +1,25 @@
 package com.prefeitura.mimg.ibge.services
 
-import com.prefeitura.mimg.ibge.client.ViaCepClient
 import com.prefeitura.mimg.ibge.entities.CepEntity
 import com.prefeitura.mimg.ibge.repository.CepRepository
-import org.springframework.beans.factory.annotation.Autowired
+import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
-import java.util.*
 
 @Service
-class CepService ( val cepRepository : CepRepository ){
-
-    @Autowired
-    private val viaCepClient : ViaCepClient? = null
+class CepService ( val cepRepository : CepRepository, var cepVia : CepEntity?) {
+    private val logger = LoggerFactory.getLogger(javaClass)
 
     fun getCep(cep: String): CepEntity? {
-
-        val cepEntity : Optional<CepEntity> = cepRepository?.findById(cep)
-        var cepVia : CepEntity? = null
+        logger.info("CepService.getCep - start")
+        val cepEntity = cepRepository.findById(cep)
 
         if (cepEntity.isPresent){
-            return cepEntity.get();
+            return cepEntity.get()
         }else{
-            cepVia = viaCepClient?.getCep(cep)
-            cepVia?.id = cep
+            cepVia = CepEntity(cep = cep, id = cep )
             cepRepository.save(cepVia)
         }
+        logger.info("CepService.getCep - end")
         return cepVia
     }
 
